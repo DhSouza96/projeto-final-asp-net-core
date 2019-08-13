@@ -15,6 +15,8 @@ using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Models;
 using SalesWebMVC.Data;
 using SalesWebMVC.Services;
+using AutoMapper;
+using SalesWebMVC.Dtos;
 
 namespace SalesWebMVC
 {
@@ -39,6 +41,8 @@ namespace SalesWebMVC
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            Mapper.Initialize(c => c.AddProfile<MappingProfile>());
 
             services.AddDbContext<SalesWebMVCContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SalesWebMVCContext")));
