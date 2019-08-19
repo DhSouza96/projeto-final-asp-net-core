@@ -12,8 +12,13 @@ namespace SalesWebMVC.Services
     {
         public MappingProfile()
         {
+<<<<<<< HEAD
             Mapper.CreateMap<Seller, SellerDto>();
             Mapper.CreateMap<SellerDto, Seller>();
+=======
+            Mapper.CreateMap<Seller, SellersDto>();
+            Mapper.CreateMap<SellersDto, Seller>();
+>>>>>>> b4185984df9c6b4720396beaa859e095c74bcbb3
         }
     }
 }
