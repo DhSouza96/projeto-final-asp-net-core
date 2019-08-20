@@ -16,10 +16,6 @@ using SalesWebMVC.Models;
 using SalesWebMVC.Data;
 using SalesWebMVC.Services;
 using AutoMapper;
-<<<<<<< HEAD
-=======
-using SalesWebMVC.Dtos;
->>>>>>> b4185984df9c6b4720396beaa859e095c74bcbb3
 
 namespace SalesWebMVC
 {
